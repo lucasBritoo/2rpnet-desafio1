@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: desafio1-deployment
+spec:
+  selector:
+    matchLabels:
+      app: desafio1
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: desafio1
+    spec:
+      containers:
+      - name: desafio1
+        image: lucasbrito0698/desafio1-kubernetes:1.0
+        env:
+        - name: TWORPTEST
+          valueFrom:
+            secretKeyRef:
+              name: secrets-desafio1
+              key: TWORPTEST
+      imagePullSecrets:
+      - name: "docker-login"
