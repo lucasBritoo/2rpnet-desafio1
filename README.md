@@ -1,6 +1,6 @@
 ## DESAFIO 1: KUBERNETES E DOCKER
 
-Desafio proposto pela empresa 2RP Net sobre Docker + Kubernetes + Shell
+Desafio para testar conhecimentos sobre Docker + Kubernetes + Shell
 
 ## 🔨 Funcionalidades do projeto
 
