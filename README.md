@@ -83,7 +83,7 @@ $ kubectl logs deployment/desafio1-deployment
 
 ## 🔀 Script em Shell
 
-Foi criado um script em Shell que percorre os namespaces de deployments em busca de utilização dos pods que utilizam secrets. Quando encontrada uma secret é verificado se o seu valor decodificado é igual ao impresso nos logs dos containers presentes no cluster Kubernetes. 
+Foi criado um script em Shell 'security.sh' que percorre os namespaces de deployments em busca de utilização dos pods que utilizam secrets. Quando encontrada uma secret é verificado se o seu valor decodificado é igual ao impresso nos logs dos containers presentes no cluster Kubernetes. 
 
 Caso os valores sejam iguais, é impresso uma mnesagem no console: 'O container presente no namespace 'deployment/[NAME_DEPLOYMENT]' tem um problema de segurança'.
 
